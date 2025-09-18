@@ -1,3 +1,3 @@
-# tmp-code-html-scss-js
+# tmp-code-html-css/scss-js
 
-tmp test dev code html css js
+tmp test dev code html css/scss js

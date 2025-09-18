@@ -108,3 +108,24 @@ body {
   position: absolute;
   opacity: 0;
 }
+
+.file-upload__input:focus + .file-upload__button {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+.file-upload__button {
+  position: relative;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #007bff;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.file-upload__label {
+  padding-left: 10px;
+  font-size: 16px;
+  color: #555;
+}
