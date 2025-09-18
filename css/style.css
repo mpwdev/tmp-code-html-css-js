@@ -1,0 +1,110 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* fonts */
+
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/inter_100.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/inter_200.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/inter_300.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter_400.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/inter_500.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/inter_600.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter_700.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/inter_800.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inter_900.woff2") format("woff2");
+}
+
+:root {
+  /* --color-light: #fff;
+  --color-grey: #838383;
+  --color-dark: #1d1d1f; */
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.wrapper {
+  padding: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.file-upload {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.file-upload__input {
+  position: absolute;
+  opacity: 0;
+}
