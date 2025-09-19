@@ -104,6 +104,7 @@ body {
   aspect-ratio: 1 / 1;
   border-radius: 100%;
   background: conic-gradient(#000, #000 var(--progress), #bfbfbf 0%);
+  margin: 10px;
 }
 
 .progress-bar::after {
