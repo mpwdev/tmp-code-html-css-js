@@ -88,3 +88,97 @@ body {
   margin: 0;
   font-family: "Inter", sans-serif;
 }
+
+.wrapper {
+  padding: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.btn {
+  --btn-padding: 0.5em 1.5em;
+  --btn-gap: 0.5em;
+  --btn-bg: #333;
+  --btn-color: #fff;
+  --btn-hover-bg: #444;
+  --btn-hover-color: #fff;
+  --btn-border-width: 1px;
+  --btn-border-style: solid;
+  --btn-border-color: var(--btn-bg);
+  --btn-border-radius: 0.5em;
+  --btn-font-weight: 400;
+  --btn-font-size: 18px;
+
+  display: inline-flex;
+  align-items: center;
+  gap: var(--btn-gap);
+  padding: var(--btn-padding);
+
+  border-width: var(--btn-border-width);
+  border-style: var(--btn-border-style);
+  border-color: var(--btn-border-color);
+  border-radius: var(--btn-border-radius);
+
+  text-decoration: none;
+  font-weight: var(--btn-font-weight, 400);
+  font-size: var(--btn-font-size, 16px);
+  font-family: sans-serif;
+  line-height: 1.5;
+
+  color: var(--btn-color);
+  background-color: var(--btn-bg);
+
+  cursor: pointer;
+
+  transition: background-color 0.3s ease, color 0.3s ease, scale 0.3s ease;
+
+  svg {
+    width: auto;
+    flex: none;
+    height: 2.2cap;
+    fill: currentColor;
+  }
+}
+
+.btn:hover {
+  color: var(--btn-hover-color);
+  background-color: var(--btn-hover-bg);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--btn-bg);
+  outline-offset: 3px;
+}
+
+.btn:active {
+  scale: 95%;
+}
+
+.btn--accent {
+  --btn-border-color: #c5cb72;
+  --btn-bg: #dde57a;
+  --btn-color: #333;
+  --btn-hover-bg: #b4b96b;
+  --btn-hover-color: #333;
+}
+
+.btn--danger {
+  --btn-border-color: #a11616;
+  --btn-bg: #d52b2b;
+  --btn-color: #fff;
+}
+
+.btn--hard {
+  --btn-border-radius: 0;
+}
+
+.btn--ghost {
+  --btn-border-color: currentColor;
+  --btn-color: #333;
+  --btn-bg: transparent;
+}
