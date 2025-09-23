@@ -132,13 +132,13 @@ body {
   cursor: pointer;
 
   transition: background-color 0.3s ease, color 0.3s ease, scale 0.3s ease;
+}
 
-  svg {
-    width: auto;
-    flex: none;
-    height: 2.2cap;
-    fill: currentColor;
-  }
+.btn svg {
+  width: auto;
+  flex: none;
+  height: 2.2cap;
+  fill: currentColor;
 }
 
 .btn:hover {
