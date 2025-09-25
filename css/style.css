@@ -167,3 +167,14 @@ body {
 .product__bottom {
   padding-top: 20px;
 }
+
+.product__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.product__link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
