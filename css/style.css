@@ -1,8 +1,13 @@
+
+/*
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
+*/
 
 /* fonts */
 
@@ -87,38 +92,4 @@
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
-  padding: 100px;
-}
-
-.chars {
-  margin: 0;
-  max-width: 500px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-
-  border: 1px solid gray;
-  padding: 20px;
-}
-
-.chars__item {
-  display: flex;
-  justify-content: space-between;
-}
-
-.chars__term {
-  position: relative;
-  overflow: hidden;
-  flex-grow: 1;
-}
-
-.chars__val {
-  margin: 0;
-  /* max-width: 200px; */
-  width: 40%;
-}
-
-.chars__term::after {
-  content: ".........................................................................";
-  position: absolute;
 }
