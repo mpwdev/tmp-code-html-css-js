@@ -12,33 +12,25 @@
   <script src="js/script.js" defer></script>
 </head>
 
-<body>
- <div class="menu-container">
-        <div class="burger-menu" id="burgerMenu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
-        <div class="menu-content">
-            <h3>Navigation Menu</h3>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Portfolio</li>
-                <li>Contact</li>
-            </ul>
-        </div>
+<body class="page__body">
+  <header class="header">
+    <div class="container header__container">
+      <a href="#" class="logo">Logo</a>
+      <nav class="nav" data-nav>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">NavLink1</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">NavLink2</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">NavLink3</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">NavLink4</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">NavLink5</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">NavLink6</a></li>
+        </ul>
+      </nav>
+      <button class="burger" data-burger aria-label="Open menu" aria-expanded="false">
+        <span class="burger__line"></span>
+      </button>
     </div>
-
-    <script>
-        const burgerMenu = document.getElementById('burgerMenu');
-
-        burgerMenu.addEventListener('click', function() {
-            this.classList.toggle('active');
-        });
-    </script>
+  </header>
 
 </body>
 
