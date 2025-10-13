@@ -1,0 +1,209 @@
+/*
+
+common reset
+normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css
+
+It might be time to rethink box-sizing: border-box
+https://youtu.be/PtAcpV6TAGM
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*/
+
+* {
+  margin: 0;
+  /* padding: 0; */
+  /* font: inherit; */
+}
+
+/*
+
+A (more) Modern CSS Reset
+https://andy-bell.co.uk/a-more-modern-css-reset/
+
+*/
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/*
+
+A Modern CSS Reset
+https://www.joshwcomeau.com/css/custom-css-reset/
+
+*/
+
+/*
+
+Improve media defaults
+
+https://youtu.be/345V2MU3E_w
+A better image reset for your CSS
+https://twitter.com/csswizardry/status/1717841334462005661
+
+*/
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 1rem;
+}
+
+/* img, */
+picture,
+svg,
+video,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+
+ul[class] {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/*
+
+.flow-content > * {
+  margin-bottom: 1rem;
+}
+
+.flow-content > *:last-child {
+  margin-bottom: 0;
+}
+
+*/
+
+.flow-content > * + * {
+  margin-top: 1.25rem;
+}
+
+/*
+
+Remove built-in form typography styles
+Inherit fonts for inputs and buttons
+font below is shortcut of fonts- properties
+
+*/
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/*
+
+Modern CSS For Dynamic Component-Based Architecture | Stephanie Eckles
+https://www.youtube.com/watch?v=Y50iqMlrqU8
+
+*/
+
+/* Baseline for default links */
+a:not([class]) {
+  /* Relatively sized thickness and offset*/
+  text-decoration-thickness: max(0.08em, 1px);
+  text-underline-offset: 0.15em;
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+:focus-visible {
+  --outline-size: max(2px, 0.15em);
+
+  outline: var(--outline-width, var(--outline-size)) var(--outline-stile, solid)
+    var(--outline-color, currentColor);
+
+  outline-offset: var(--outline-offset, var(--outline-size));
+}
+
+/* Scroll padding allowance above anchor links */
+:target {
+  scroll-padding-block-start: 2rem;
+}
+
+/* Scroll padding allowance below focused elements
+to ensure they are clearly in view */
+:focus {
+  scroll-padding-block-end: 8vh;
+}
